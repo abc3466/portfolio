@@ -316,27 +316,44 @@ nav#nav_bar {
   color: var(--color-dark-grey);
 }
 
+#position_box {
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+}
+
 .work_box {
   position: relative;
-  width: 70%;
+  width: 45%;
   font-size: 1.5em;
-  margin: 40px auto;
+  margin: 40px 2.5%;
   overflow: hidden;
+  float: left;
 }
 
 .img_box {
-  width: 65%;
+  width: 100%;
 }
 
 .img_box img {
   width: 100%;
+  opacity: 1;
+}
+
+.work_box:hover img {
+  opacity: 0.4;
 }
 
 .work_text {
   position: absolute;
   top: 18%;
-  left: 55%;
+  left: 10%;
   font-family: "S-CoreDream-8Heavy", sans-serif;
+  opacity: 0;
+}
+
+.work_box:hover .work_text {
+  opacity: 1;
 }
 
 .work_box.right .img_box {
