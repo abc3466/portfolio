@@ -356,16 +356,8 @@ nav#nav_bar {
   opacity: 1;
 }
 
-.work_box.right .img_box {
-  float: right;
-}
-
 .work_box.right .work_text {
   left: 15%;
-}
-
-.work_box.right {
-  margin: 100px auto;
 }
 
 .work_text {
@@ -464,8 +456,6 @@ nav#nav_bar {
 }
 
 .contact_box_wrap > p:last-child {
-  position: absolute;
-  bottom: 100px;
   width: 100%;
   text-align: center;
   left: 0;
@@ -547,12 +537,7 @@ nav#nav_bar {
   }
 
   .work_box {
-    width: 85%;
-    font-size: 1em;
-  }
-
-  .img_box {
-    width: 55%;
+    font-size: 0.7em;
   }
 
   #work_title {
@@ -563,7 +548,6 @@ nav#nav_bar {
   .work_text {
     font-size: 1.6em;
     color: #444;
-    left: 50%;
   }
 
   /* CONTACT */
@@ -632,7 +616,7 @@ nav#nav_bar {
   .nav_box {
     width: 100%;
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .nav_logo {
@@ -653,11 +637,15 @@ nav#nav_bar {
 
   /* HOME */
 
+  #home {
+    height: auto;
+  }
+
   .home_box {
-    width: 100%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 100px auto;
     padding: 0;
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   .home_box .face {
@@ -729,14 +717,19 @@ nav#nav_bar {
     font-size: 4em;
     margin-bottom: 40px;
   }
-
-  .work_box.right {
-    margin: 30px auto;
+  #position_box {
+    width: 80%;
   }
 
+  .work_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   .work_text {
     position: static;
     text-align: center;
+    opacity: 1;
   }
 
   .work_text {
@@ -747,7 +740,9 @@ nav#nav_bar {
   .work_text a span > span {
     width: 100%;
   }
-
+  .work_box:hover img {
+    opacity: 1;
+  }
   /* CONTACT */
 
   #contact {
@@ -832,10 +827,10 @@ nav#nav_bar {
   /* HOME */
 
   .home_box {
-    width: 100%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 100px auto;
     padding: 0;
-    font-size: 1.1em;
+    font-size: 0.7em;
   }
 
   .home_box .face {
@@ -975,10 +970,10 @@ nav#nav_bar {
   /* HOME */
 
   .home_box {
-    width: 100%;
-    margin: 0 auto;
+    width: 50%;
+    margin: 70px auto;
     padding: 0;
-    font-size: 0.7em;
+    font-size: 0.4em;
   }
 
   .home_box .face {
