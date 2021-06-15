@@ -341,7 +341,7 @@ nav#nav_bar {
 }
 
 .work_box:hover img {
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .work_text {
@@ -371,6 +371,9 @@ nav#nav_bar {
   letter-spacing: 0.05em;
 }
 
+p.work_time {
+  color: #333;
+}
 .work_text a {
   display: inline-block;
   color: #000;
