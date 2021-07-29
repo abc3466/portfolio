@@ -111,3 +111,26 @@ if(moveSlide){
         nextSlide();
     },slideDelay);
 }
+
+//재생 정지
+// let reSlide = setInterval( 
+//     nextSlide
+//     ,slideDelay);
+    
+//     reSlide;
+    
+//     const stopBtn = document.querySelector('.stop_go');
+    
+//     stopBtn.addEventListener('click',(e)=>{
+//         let target = e.target;
+//         if(target.id =='stop'){
+//             reSlide = setInterval(
+//                 nextSlide
+//                 ,slideDelay);
+//             target.id='go';
+//             return false;
+//         }
+//         target.id = 'stop';
+//         clearInterval(reSlide);
+//         resLide=0;
+//     })
