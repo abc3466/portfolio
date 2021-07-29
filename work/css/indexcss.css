@@ -261,9 +261,9 @@ section.md_box > a > img {
 section.md_box {
   position: relative;
   margin: 0;
-  background: rgba(240, 240, 240, 0.7);
-  padding-top: 60px;
-  padding-bottom: 70px;
+  background: rgba(240, 240, 240, 0.48);
+  padding-top: 100px;
+  padding-bottom: 150px;
   margin-bottom: 100px;
   margin-top: 150px;
 }
