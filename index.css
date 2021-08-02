@@ -458,11 +458,13 @@ p.work_time {
   margin-bottom: 5%;
 }
 
-.contact_box_wrap > p:last-child {
+.end {
   width: 100%;
   text-align: center;
   left: 0;
   color: #666;
+  position: absolute;
+  bottom: 150px;
 }
 
 /* 스크롤바 커스텀 */
@@ -608,9 +610,7 @@ p.work_time {
     float: left;
   }
 
-  .contact_box_wrap > p:last-child {
-    margin-top: 100px;
-    text-align: center;
+  .end {
   }
 }
 
@@ -797,8 +797,8 @@ p.work_time {
     float: left;
   }
 
-  .contact_box_wrap > p:last-child {
-    bottom: 0;
+  .end {
+    bottom: 60px;
   }
 }
 
