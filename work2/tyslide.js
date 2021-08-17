@@ -1,16 +1,16 @@
 const slideBox = document.querySelector('.slide_box');
 const slideWrap = document.querySelector('.slide_wrap');
 
-let slideDelay = 1000;
 //자동으로 슬라이드 움직일건지 그리고 그 속도
 
 
 const slideLen = slideWrap.childElementCount;
 const slideItem = document.querySelectorAll('.slide_item');
 
-let delay = 1000;
+let slideDelay = 3000;
+let slideTran = 1000;
 for(key of slideItem){
-    key.style.transition=`${delay}ms`;
+    key.style.transition=`${slideTran}ms`;
 }
 
 //슬라이드 페이저 생성
