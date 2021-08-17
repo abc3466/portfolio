@@ -331,6 +331,10 @@ nav#nav_bar {
   float: left;
 }
 
+.work_background {
+  padding-top: 50%;
+}
+
 .img_box {
   width: 100%;
 }
@@ -340,7 +344,7 @@ nav#nav_bar {
   opacity: 1;
 }
 
-.work_box:hover img {
+.work_box:hover .work_background {
   opacity: 0.2;
 }
 

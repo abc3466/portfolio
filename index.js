@@ -1,5 +1,15 @@
 'use strict'
 
+//work box 백그라운드
+const workBox =document.querySelectorAll('.work_background');
+let workBoxNum = 1;
+for(let key of workBox){
+  key.style.background=`center / cover no-repeat url(./img/work${workBoxNum}.png)`;
+  workBoxNum++;
+}
+
+
+
 //네비게이션 바 효과
 const navbar = document.querySelector('#nav_bar');
 addEventListener('scroll', (event)=>{
