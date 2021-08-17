@@ -1,6 +1,8 @@
 'use strict'
 
 //work box 백그라운드
+
+
 const workBox =document.querySelectorAll('.work_background');
 let workBoxNum = 1;
 for(let key of workBox){
