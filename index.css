@@ -89,7 +89,7 @@ nav#nav_bar {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 10px;
-  width: 20%;
+  width: 25%;
   text-align: center;
   color: #333;
   font-family: "Lexend Exa", sans-serif;
@@ -164,6 +164,7 @@ nav#nav_bar {
 .about_wrap {
   width: 80%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 #about_self {
@@ -181,7 +182,6 @@ nav#nav_bar {
 .about_skill {
   font-size: 2.7em;
   margin-bottom: 50px;
-  margin-top: 15px;
 }
 
 .about_left {
@@ -486,39 +486,9 @@ p.work_time {
 
   /* ABOUT */
 
-  .about_left {
-    font-size: 4em;
+  .about_wrap {
+    font-size: 0.7em;
   }
-
-  .about_left {
-    font-size: 1.2em;
-  }
-
-  /* SKILL */
-  #skill {
-    padding: 6% 10%;
-    padding-bottom: 8%;
-  }
-
-  #skill_title {
-    font-size: 3em;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-  .skill_box > div {
-    width: 100%;
-    margin-bottom: 20px;
-    font-size: 1.1em;
-  }
-
-  .skill_box > div span {
-    height: 15px;
-  }
-
-  .skill_text {
-    font-size: 1.3em;
-  }
-
   /* WORK */
   #work {
     background: #f6f7f9;
@@ -647,12 +617,8 @@ p.work_time {
     padding-top: 10%;
   }
 
-  .about_left {
-    font-size: 3.3em;
-  }
-
-  .about_left {
-    font-size: 1em;
+  .about_wrap {
+    font-size: 0.5em;
   }
 
   /* SKILL */
@@ -839,32 +805,29 @@ p.work_time {
     transform: translateY(0);
   }
 
-  .about_left {
-    position: static;
-    font-size: 4em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 10% auto;
+  .about_wrap {
+    padding-bottom: 150px;
+  }
+
+  .about_wrap > div {
+    width: 100%;
   }
 
   .about_left {
     width: 100%;
-    padding: 0 10%;
     font-size: 1.3em;
   }
 
   .about_left_info > div > p {
     flex: 1.3;
-    padding-left: 40px;
+    font-size: 2em;
   }
 
   .about_left_info > div > ul {
     flex: 2;
+    font-size: 1.7em;
   }
 
-  /* SKILL */
   #skill_title {
     font-size: 3em;
   }
@@ -876,18 +839,12 @@ p.work_time {
 
   .skill_box > div {
     width: 100%;
-    margin-bottom: 20px;
-    font-size: 1.3em;
+    margin-bottom: 50px;
+    font-size: 2.3em;
   }
 
   .skill_box > div span {
     height: 15px;
-  }
-
-  .skill_text {
-    width: 100%;
-    font-size: 1.2em;
-    margin-bottom: 30px;
   }
 
   /* WORK */
@@ -976,26 +933,13 @@ p.work_time {
     padding-top: 10%;
   }
 
-  #about_self.fixed,
-  #about_self {
-    position: static;
-    transform: translateY(0);
+  .about_wrap {
+    padding-bottom: 0;
+    font-size: 0.4em;
   }
-
-  .about_left {
-    position: static;
-    font-size: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 10% auto;
-  }
-
   .about_left {
     width: 100%;
-    padding: 0 10%;
-    font-size: 0.7em;
+    font-size: 1em;
   }
 
   .about_left_info_box {
@@ -1005,40 +949,19 @@ p.work_time {
 
   .about_left_info > div > p {
     flex: 1;
-    padding-left: 20px;
   }
 
   .about_left_info > div > ul {
     flex: 2;
   }
 
-  /* SKILL */
-  #skill_title {
-    font-size: 1.5em;
-  }
-
   .skill_box {
-    width: 100%;
-    margin: 0;
-  }
-
-  .skill_text {
-    width: 100%;
-    font-size: 0.7em;
-    margin-bottom: 30px;
-    padding-top: 15px;
-  }
-
-  .skill_box > div {
-    width: 100%;
-    margin-bottom: 20px;
-    font-size: 0.5em;
+    font-size: 0.78em;
   }
 
   .skill_box > div span {
-    height: 10px;
+    height: 8px;
   }
-
   /* WORK */
   #work {
     height: auto;
