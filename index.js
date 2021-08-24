@@ -44,34 +44,6 @@ navBtn.addEventListener('click', (event) => {
 });
 
 
-//about 왼쪽 position fixed 만들기
-const aboutFixed = document.querySelector('#about_self')
-
-addEventListener('scroll',(event)=>{
-  const aboutTop = document.querySelector('#about');
-  const skillTop = document.querySelector('#skill');
-  const top = window.pageYOffset + aboutTop.getBoundingClientRect().top;
-  const bottom = window.pageYOffset + skillTop.getBoundingClientRect().top;
-  
-  if( window.scrollY>top-100 && window.scrollY<bottom-600 ){
-    aboutFixed.classList.add('fixed');
-    aboutFixed.style.opacity=1;
-  }else{
-    aboutFixed.style.opacity=0;
-    aboutFixed.classList.remove('fixed');
-  }
-
-  if(window.scrollX<1300){
-    if( window.scrollY>top-100 && window.scrollY<bottom-500 ){
-      aboutFixed.classList.add('fixed');
-      aboutFixed.style.opacity=1;
-    }else{
-      aboutFixed.style.opacity=0;
-      aboutFixed.classList.remove('fixed');
-    }
-  }
-});
-
 
 //네비게이션 스크롤바 위치에 따른 메뉴 효과
 
@@ -88,27 +60,6 @@ function navScroll(name,num){
       if( domTop-200<wt && wt<domTop+thisH-200){
         navTop.classList.add('active');
 
-        //skill 바 
-        function skillBar (name,sec,per){
-          const wide = document.querySelector(name);
-          wide.style.width=per;
-          wide.style.transition=sec;
-          }
-
-        if(name=='#skill'){
-          skillBar('.html','2s ','70%');
-          skillBar('.css','2s 0.2s','75%');
-          skillBar('.js','2s 0.6s','60%');
-          skillBar('.ps','2s 0.8s','50%');
-          skillBar('.il','2s 1s','50%');
-        }else{
-          skillBar('.html','1s',0);
-          skillBar('.css','1s',0);
-          skillBar('.ps','1s',0);
-          skillBar('.js','1s',0);
-          skillBar('.il','1s',0);
-        }
-
       }else{
         navTop.classList.remove('active');
       }
@@ -118,8 +69,7 @@ function navScroll(name,num){
 
 navScroll("#home",1);
 navScroll("#about",2);
-navScroll("#skill",3);
-navScroll("#work",4);
-navScroll("#contact",5);
+navScroll("#work",3);
+navScroll("#contact",4);
 
 
